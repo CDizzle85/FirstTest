@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Three Column</title>
+	<link href="https://fonts.googleapis.com/css?family=Caveat+Brush" rel="stylesheet">
+
+	<style>
+		body{
+			font-family: 'Caveat Brush', cursive;
+			background-color: lightgreen;
+		}
+
+		#pagewrap{
+			padding: 5px;
+			width: 960px;
+			margin: 10px auto;
+		}
+
+		header{
+			height: 100px;
+			padding: 0 5px;
+		}
+		#content{
+			width:290px;
+			float:left;
+			padding:5px 15px;
+		}
+
+		#middle{
+			width:294px;
+			float: left;
+			padding: 5px 15px;
+			margin:0px 5px 5px 5px;
+		}
+
+		#sidebar{
+			width: 270px;
+			float: left;
+			padding: 5px 15px;
+		}
+		footer{
+			clear: both;
+			padding: 0px 15px;
+		}
+
+/*************************
+**************************
+Media Queries
+**************************
+**************************/
+
+/*For 980px or less*/
+@media screen and (max-width: 980px){
+
+	#pagewrap{
+		width: 94%;
+	}
+	#content{
+		width: 41%;
+		padding: 1% 4%;
+	}
+	#middle{
+		width: 41%;
+		padding: 1% 4%;
+		margin: 0px 0px 5px 5px;
+		float: right;
+	}
+
+	header, footer{
+		padding: 1% 4%;
+	}
+
+}
+
+/* for 600px or less*/
+@media screen and (max-width: 600px){
+	#content{
+		width: auto;
+		float: none;
+	}
+	#middle{
+		width: auto;
+		float: none;
+		margin-left: 0px;
+	}
+	#sidebar{
+		width: auto;
+		float: none;
+	}
+}
+
+/* for 480px or less*/
+@media screen and (max-width: 480px){
+	header{
+		height: auto;
+	}
+	h1{
+		font-size: 2em;
+	}
+	#sidebar{
+		display: none;
+	}
+}
+
+#content{
+	background: #f8f8f8;
+}
+#sidebar{
+	background: #f0efef;
+}
+header, #content, #middle, #sidebar{
+	margin-bottom: 5px;
+}
+#pagewrap, header, #content, #middle, #sidebar, footer{
+	border: solid 1px #ccc;
+}
+
+</style>
+</head>
+
+
+<body>
+
+<div id ="pagewrap">
+	<header>
+		<h1> Three Column Design</h1>
+	</header>
+
+	<section id ="content">
+		<h2> 1st Content Area </h2>
+			<p> Bacon ipsum dolor amet fatback dolore officia landjaeger frankfurter culpa shankle bacon pancetta. Sed commodo enim aliqua fatback id. Dolore porchetta jowl voluptate in eu ut quis pig jerky. Picanha nostrud beef, shank ut proident meatloaf velit prosciutto kevin labore cow tail ullamco tongue. Labore adipisicing ullamco filet mignon, commodo capicola nisi voluptate ham hock beef chuck laborum duis brisket. Tail pork belly pork duis eu pancetta short loin adipisicing pig mollit.</p>
+	</section>
+
+	<section id= "middle">
+		<h2> 2nd Content Area </h2>
+			<p> Bacon ipsum dolor amet laborum strip steak short loin elit. Flank filet mignon enim in ad tail nulla eu laboris beef cupim. Ribeye qui eiusmod flank. Aliquip pork chop fatback nostrud pork belly dolore pork loin cupim exercitation.
+
+			Strip steak venison est, swine qui fatback tri-tip cupim ham hock nulla lorem ut reprehenderit dolor andouille. Sed ut pastrami reprehenderit eu hamburger aliqua est, irure sint drumstick pork belly landjaeger. Cow ad pork loin capicola tempor corned beef deserunt strip steak duis. Eiusmod aliqua beef sirloin, ea prosciutto in pork belly ut. Alcatra ea anim salami nulla ut frankfurter shoulder pork belly in elit duis labore beef ribs. Drumstick mollit meatloaf ea flank t-bone picanha nulla cupidatat quis venison elit andouille ullamco. </p>
+
+	</section>
+
+	<aside id="sidebar">
+		<h2> 3rd Content Area</h2>
+		<p>Bacon ipsum dolor amet reprehenderit exercitation turducken alcatra, chuck kielbasa ball tip nisi. In deserunt filet mignon qui ad, pig shank kevin cupidatat voluptate short ribs andouille non. Landjaeger mollit cupidatat ad chicken. Mollit kevin cow magna, pork belly jowl occaecat.
+
+		Alcatra tail ground round, burgdoggen veniam porchetta elit andouille tri-tip ut ad anim. Landjaeger prosciutto shoulder, beef turkey drumstick proident pork chop pork loin labore chicken tongue tempor. Tri-tip fatback veniam consectetur in, irure officia shank short loin spare ribs pastrami landjaeger sausage minim. Adipisicing excepteur pancetta short ribs officia in nostrud alcatra. Pork loin ullamco swine leberkas beef doner.
+
+		Andouille ea proident, ham hock duis magna filet mignon pariatur jowl adipisicing sirloin minim. Sint dolore fatback ullamco eu pork loin jowl nostrud ipsum ea porchetta strip steak turducken dolore. Brisket veniam aliqua drumstick reprehenderit. Laboris tri-tip sed, labore drumstick pancetta ex ullamco ham. T-bone mollit non aliquip velit bresaola pastrami, tail tempor ribeye andouille beef meatloaf corned beef. </p>
+	</aside>
+
+<footer>
+	<h4>Footer</h4>
+	<p>Footer Text</p>
+</footer>
+
+</div>
+</body>
+</html>
